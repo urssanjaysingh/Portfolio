@@ -37,20 +37,33 @@ const HireMePage = () => {
     };
 
     const successStyles = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#dff0d8',
         border: '1px solid #d0e9c6',
         color: '#3c763d',
         padding: '10px',
         marginBottom: '15px',
+        width: 'fit-content', // Set the width to fit the content
+        maxWidth: '100%', // Set maximum width to 100%
+        margin: '0 auto', // Center the message horizontally
     };
 
     const errorStyles = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#f2dede',
         border: '1px solid #ebccd1',
         color: '#a94442',
         padding: '10px',
         marginBottom: '15px',
+        width: 'fit-content', // Set the width to fit the content
+        maxWidth: '100%', // Set maximum width to 100%
+        margin: '0 auto', // Center the message horizontally
     };
+
 
     const buttonStyles = {
         display: "block",
