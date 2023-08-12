@@ -31,9 +31,7 @@ const LandingPage = () => {
                         `}
                         </style>
                         <div className="container">
-                            <div className="avatar">
-                                <img src="img/avatars/avatar.jpg" alt="Sanjay Singh" />
-                            </div>
+                            <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
                             <div className="about-me animated-text">
                                 <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
                                 <p className="lead">
