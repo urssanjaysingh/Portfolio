@@ -14,14 +14,14 @@ const Request = ({ request, selectedRequests, setSelectedRequests }) => {
     };
 
     return (
-        <tr style={rowStyle}>
+        <tr style={{ borderBottom: '1px solid #ccc' }}>
             <td style={cellStyle}>
                 <input type="checkbox" checked={isSelected} onChange={toggleSelect} />
             </td>
             <td style={cellStyle}>{subject}</td>
             <td style={cellStyle}>{email}</td>
             <td style={cellStyle}>{message}</td>
-            <td style={dateCellStyle}>
+            <td style={{ ...cellStyle, textAlign: 'center' }}>
                 {new Date(date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
@@ -32,19 +32,10 @@ const Request = ({ request, selectedRequests, setSelectedRequests }) => {
     );
 };
 
-const rowStyle = {
-    borderBottom: '1px solid #ccc',
-};
-
 const cellStyle = {
     padding: '8px',
 };
 
-const dateCellStyle = {
-    ...cellStyle,
-    textAlign: 'center',
-};
+const memoizedRequest = memo(Request)
 
-const memoizedRequest = memo(Request);
-
-export default memoizedRequest;
+export default memoizedRequest

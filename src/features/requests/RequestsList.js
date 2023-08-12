@@ -97,14 +97,8 @@ const RequestsList = () => {
                             <div style={{ ...errorStyle, textAlign: 'center' }}>{error}</div>
                         ) : requests && requests.length > 0 ? (
                             <>
-                                <table className="request-table" style={{
-                                    width: '100%',
-                                    borderCollapse: 'collapse',
-                                    /* Add the following styles for responsiveness */
-                                    display: 'block',
-                                    overflowX: 'auto',
-                                }}>
-                                            <thead style={{ display: 'block' }}>
+                                <table className="request-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                    <thead>
                                         <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
                                             <th style={tableHeaderCellStyle}>Select</th>
                                             <th style={tableHeaderCellStyle}>Subject</th>
@@ -113,7 +107,7 @@ const RequestsList = () => {
                                             <th style={{ ...tableHeaderCellStyle, textAlign: 'center' }}>Date</th>
                                         </tr>
                                     </thead>
-                                            <tbody style={{ display: 'block' }}>
+                                    <tbody>
                                         {requests.map((request) => (
                                             // Render the request only if it's not in deletedRequests
                                             !deletedRequests.includes(request._id) && (
@@ -129,7 +123,7 @@ const RequestsList = () => {
                                 </table>
                             </>
                         ) : (
-
+                            
                             <p style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#555', marginTop: '20px' }}>
                                 No requests available.
                             </p>
