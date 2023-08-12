@@ -10,27 +10,41 @@ const LandingPage = () => {
             <div>
                 <main className="page lanidng-page">
                     <section className="portfolio-block block-intro">
+                        <style>
+                            {`
+                            .animated-text {
+                                opacity: 0;
+                                transform: translateY(20px);
+                                animation: fadeAndSlideIn 1s ease forwards;
+                            }
+
+                            @keyframes fadeAndSlideIn {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(20px);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                            }
+                        `}
+                        </style>
                         <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-6">
-                                    <div className="avatar">
-                                        <img src="img/avatars/avatar.jpg" alt="Sanjay Singh" />
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="about-me">
-                                        <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
-                                        <p className="lead">
-                                            A final year B.Tech. Computer Science Engineering student with a passion for innovation and technology.
-                                        </p>
-                                        <p>
-                                            I'm on a journey to discover and apply the latest trends in software development. Exploring new technologies, solving challenging problems, and building elegant solutions is what fuels my enthusiasm.
-                                        </p>
-                                        <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
-                                            Hire me
-                                        </Link>
-                                    </div>
-                                </div>
+                            <div className="avatar">
+                                <img src="img/avatars/avatar.jpg" alt="Sanjay Singh" />
+                            </div>
+                            <div className="about-me animated-text">
+                                <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
+                                <p className="lead">
+                                    A final year B.Tech. Computer Science Engineering student with a passion for innovation and technology.
+                                </p>
+                                <p>
+                                    I'm on a journey to discover and apply the latest trends in software development. Exploring new technologies, solving challenging problems, and building elegant solutions is what fuels my enthusiasm.
+                                </p>
+                                <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
+                                    Hire me
+                                </Link>
                             </div>
                         </div>
                     </section>
