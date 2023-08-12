@@ -22,19 +22,16 @@ I am proficient in a variety of skills that contribute to my software developmen
 - HTML, CSS, and Bootstrap for web design
 - Backend development using JavaScript, Express.js, Node.js, Java Servlets, and C++
 - Database management using MySQL and MongoDB
-- ... (add more skills)
 
 ## Projects
 Explore some of my notable projects that demonstrate my technical capabilities:
 - **ATM-System:** A Java project simulating an ATM system. [GitHub Repo](https://github.com/urssanjaysingh/ATM-System)
 - **Employee Management System:** A Python project using the tabulate module. [GitHub Repo](https://github.com/urssanjaysingh/Employee-Management-System)
-- ... (add more projects)
 
 ## Experience
 I am currently a Computer Science Engineering student at Dev Bhoomi Group of Institutions, Saharanpur. I'm passionate about learning and applying new technologies to real-world projects. My experience includes:
 - Pursuing B.Tech in Computer Science Engineering
-- Internship at XYZ Company (add more experiences)
-
+  
 ## Contact
 Feel free to get in touch with me. Here's how you can reach me:
 - Email: sanjaysingh26112000@gmail.com
@@ -48,8 +45,6 @@ When I'm not coding, I enjoy:
 - Listening to music
 - Reading books
 
-Explore my full portfolio [here](https://urssanjaysingh.onrender.com/).
-
-Learn more about me and my journey by visiting my live portfolio [here](https://urssanjaysingh.onrender.com/):
+Learn more about me and my journey by visiting my live portfolio:
 
 [![Live Demo](https://img.shields.io/badge/-Live%20Demo-brightgreen?style=for-the-badge)](https://urssanjaysingh.onrender.com/)
