@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>Sanjay Singh's Portfolio</h1>
+  <p>Welcome to my portfolio repository! This website showcases my skills, projects, and experience as a software developer.</p>
+  <a href="https://urssanjaysingh.onrender.com/">
+    <img src="https://img.shields.io/badge/-Live%20Demo-brightgreen?style=for-the-badge" alt="Live Demo">
+  </a>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Introduction](#introduction)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Experience](#experience)
+- [Contact](#contact)
+- [Hobbies](#hobbies)
 
-## Available Scripts
+## Introduction
+Welcome to my portfolio repository! This website serves as a platform for me to showcase my technical skills, projects, and experience as a software developer. You can explore my expertise, projects, and get in touch with me through the provided information.
 
-In the project directory, you can run:
+## Skills
+I am proficient in a variety of skills that contribute to my software development journey. Some of my key skills include:
+- HTML, CSS, and Bootstrap for web design
+- Backend development using JavaScript, Express.js, Node.js, Java Servlets, and C++
+- Database management using MySQL and MongoDB
 
-### `npm start`
+## Projects
+Explore some of my notable projects that demonstrate my technical capabilities:
+- **ATM-System:** A Java project simulating an ATM system. [GitHub Repo](https://github.com/urssanjaysingh/ATM-System)
+- **Employee Management System:** A Python project using the tabulate module. [GitHub Repo](https://github.com/urssanjaysingh/Employee-Management-System)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Experience
+I am currently a Computer Science Engineering student at Dev Bhoomi Group of Institutions, Saharanpur. I'm passionate about learning and applying new technologies to real-world projects. My experience includes:
+- Pursuing B.Tech in Computer Science Engineering
+  
+## Contact
+Feel free to get in touch with me. Here's how you can reach me:
+- Email: sanjaysingh26112000@gmail.com
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/urssanjaysingh)
+- GitHub: [GitHub Profile](https://github.com/urssanjaysingh)
+- Facebook: [Facebook Profile](https://www.facebook.com/urssanjaysingh)
+- Instagram: [Instagram Profile](https://www.instagram.com/urssanjaysingh/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Hobbies
+When I'm not coding, I enjoy:
+- Listening to music
+- Reading books
 
-### `npm test`
+Learn more about me and my journey by visiting my live portfolio:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-brightgreen?style=for-the-badge)](https://urssanjaysingh.onrender.com/)
