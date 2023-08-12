@@ -51,7 +51,7 @@ const LandingPage = () => {
                         `}
                         </style>
                         <div className="container">
-                            <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
+                            <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')", marginTop: "20px" }}></div>
                             <div className="about-me animated-text">
                                 <h1 className="display-4">{typedText}</h1>
                                 <p className="lead">
@@ -66,35 +66,6 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </section>
-
-                    {/* <section className="portfolio-block photography">
-                        <div className="container">
-                            <div className="row g-0">
-                                <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/html.jpg" alt="HTML" /></Link>
-                                </div>
-                                <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/mern.jpg" alt="MERN" /></Link>
-                                </div>
-                                <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/software.jpg" alt="Software" /></Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-
-                    {/* <section className="portfolio-block call-to-action border-bottom">
-                        <div className="container">
-                            <div className="d-flex justify-content-center align-items-center content">
-                                <h3>Like what you see?</h3>
-                                <Link to="/hire-me">
-                                    <button className="btn btn-outline-primary btn-lg" type="button">
-                                        Hire me
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
-                    </section> */}
 
                     <section className="portfolio-block skills">
                         <div className="container">
