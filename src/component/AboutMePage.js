@@ -7,6 +7,20 @@ import useTitle from '../hooks/useTitle'
 const AboutMePage = () => {
     useTitle('About Me')
 
+    const leadStyles = {
+        fontSize: '1.25rem',
+        lineHeight: '1.6',
+        marginBottom: '1rem',
+        color: '#333', // Adjust the text color for readability
+    };
+
+    const regularTextStyles = {
+        fontSize: '1rem',
+        lineHeight: '1.5',
+        marginBottom: '1rem',
+        color: '#555', // Adjust the text color for readability
+    };
+
     const [typedText, setTypedText] = useState('');
     const fullText = "Hi, I'm Sanjay Singh";
 
@@ -56,10 +70,10 @@ const AboutMePage = () => {
                         <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
                         <div className="about-me animated-text">
                             <h1 className="display-4">{typedText}</h1>
-                            <p className="lead">
+                            <p className="lead" style={leadStyles}>
                                 A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
                             </p>
-                            <p>
+                            <p style={regularTextStyles}>
                                 From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
                             </p>
                             <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
