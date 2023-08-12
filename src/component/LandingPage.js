@@ -23,17 +23,18 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </section>
+
                     <section className="portfolio-block photography">
                         <div className="container">
                             <div className="row g-0">
                                 <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/html.jpg" alt="HTML" /></Link>
+                                    <Link to="#"><img className="img-fluid image" src="img/main/html.jpg" alt="HTML" width="800" height="533" /></Link>
                                 </div>
                                 <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/mern.jpg" alt="MERN" /></Link>
+                                    <Link to="#"><img className="img-fluid image" src="img/main/mern.jpg" alt="MERN" width="800" height="533" /></Link>
                                 </div>
                                 <div className="col-md-6 col-lg-4 item zoom-on-hover">
-                                    <Link to="#"><img className="img-fluid image" src="img/main/software.jpg" alt="Software" /></Link>
+                                    <Link to="#"><img className="img-fluid image" src="img/main/software.jpg" alt="Software" width="800" height="533" /></Link>
                                 </div>
                             </div>
                         </div>
