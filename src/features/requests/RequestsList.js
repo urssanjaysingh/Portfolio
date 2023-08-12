@@ -8,6 +8,47 @@ import { useSendLogoutMutation } from '../auth/authApiSlice'
 import useTitle from '../../hooks/useTitle';
 
 const RequestsList = () => {
+
+    const tableStyles = {
+        table: {
+            fontSize: '1rem',
+            width: '100%',
+            display: 'grid',
+            gridTemplateColumns: '1fr 2fr 1fr',
+            color: 'var(--TABLE-COLOR)',
+            gap: '0.1em',
+        },
+        button: {
+            padding: '0.25em',
+            fontSize: '1.5rem',
+            color: 'var(--TABLE-COLOR)',
+        },
+        thead: {
+            position: 'sticky',
+            top: 0,
+            zIndex: 1,
+        },
+        th: {
+            backgroundColor: 'var(--TABLE-BGCOLOR)',
+            textAlign: 'left',
+            border: '1px solid var(--TABLE-COLOR)',
+            padding: '0.5em',
+        },
+        cell: {
+            backgroundColor: 'var(--TABLE-BGCOLOR)',
+            textAlign: 'left',
+            border: '1px solid var(--TABLE-COLOR)',
+            padding: '0.5em',
+        },
+        lastCell: {
+            display: 'grid',
+            placeContent: 'center',
+        },
+        inactiveCell: {
+            backgroundColor: 'var(--INACTIVE)',
+        },
+    };
+    
     useTitle('Requests')
 
     const [selectedRequests, setSelectedRequests] = useState([]);
@@ -97,14 +138,14 @@ const RequestsList = () => {
                             <div style={{ ...errorStyle, textAlign: 'center' }}>{error}</div>
                         ) : requests && requests.length > 0 ? (
                             <>
-                                <table className="request-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
-                                    <thead>
+                                        <table className="request-table" style={tableStyles.table}>
+                                            <thead style={tableStyles.thead}>
                                         <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
-                                            <th style={tableHeaderCellStyle}>Select</th>
-                                            <th style={tableHeaderCellStyle}>Subject</th>
-                                            <th style={tableHeaderCellStyle}>Email</th>
-                                            <th style={tableHeaderCellStyle}>Message</th>
-                                            <th style={{ ...tableHeaderCellStyle, textAlign: 'center' }}>Date</th>
+                                            <th style={tableStyles.th}>Select</th>
+                                            <th style={tableStyles.th}>Subject</th>
+                                            <th style={tableStyles.th}>Email</th>
+                                            <th style={tableStyles.th}>Message</th>
+                                            <th style={{ ...tableStyles.th, textAlign: 'center' }}>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -151,12 +192,6 @@ const RequestsList = () => {
             </Helmet>
         </main>
     );
-};
-
-// Inline style for table header cells
-const tableHeaderCellStyle = {
-    padding: '8px',
-    fontWeight: 'bold',
 };
 
 export default RequestsList;
