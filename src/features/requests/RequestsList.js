@@ -104,7 +104,7 @@ const RequestsList = () => {
                                     display: 'block',
                                     overflowX: 'auto',
                                 }}>
-                                    <thead style={{ display: 'block' }}>
+                                            <thead style={{ display: 'block' }}>
                                         <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
                                             <th style={tableHeaderCellStyle}>Select</th>
                                             <th style={tableHeaderCellStyle}>Subject</th>
@@ -113,7 +113,7 @@ const RequestsList = () => {
                                             <th style={{ ...tableHeaderCellStyle, textAlign: 'center' }}>Date</th>
                                         </tr>
                                     </thead>
-                                    <tbody style={{ display: 'block' }}>
+                                            <tbody style={{ display: 'block' }}>
                                         {requests.map((request) => (
                                             // Render the request only if it's not in deletedRequests
                                             !deletedRequests.includes(request._id) && (
