@@ -20,7 +20,7 @@ const HireMePage = () => {
 
     const [isEmailValid, setIsEmailValid] = useState(true); // Track email validity
 
-    const emailValidationPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
+    const emailValidationPattern = ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
