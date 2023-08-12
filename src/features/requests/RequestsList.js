@@ -95,50 +95,49 @@ const RequestsList = () => {
                             </div>
                         ) : err ? (
                             <div style={{ ...errorStyle, textAlign: 'center' }}>{error}</div>
-                        ) : requests ? (
-                            requests.length > 0 ? (
-                                <>
-                                    <table className="request-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
-                                        <thead>
-                                            <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
-                                                <th style={tableHeaderCellStyle}>Select</th>
-                                                <th style={tableHeaderCellStyle}>Subject</th>
-                                                <th style={tableHeaderCellStyle}>Email</th>
-                                                <th style={tableHeaderCellStyle}>Message</th>
-                                                <th style={{ ...tableHeaderCellStyle, textAlign: 'center' }}>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {requests.map((request) => (
-                                                // Render the request only if it's not in deletedRequests
-                                                !deletedRequests.includes(request._id) && (
-                                                    <Request
-                                                        key={request._id}
-                                                        request={request}
-                                                        selectedRequests={selectedRequests}
-                                                        setSelectedRequests={setSelectedRequests}
-                                                    />
-                                                )
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                    {selectedRequests.length > 0 && (
-                                        <button
-                                            className="btn btn-danger"
-                                            style={{ marginTop: '20px' }}
-                                            onClick={handleDeleteSelected}
-                                            disabled={isDeleting}
-                                        >
-                                            {isDeleting ? 'Deleting...' : 'Delete Selected'}
-                                        </button>
-                                    )}
-                                </>
-                            ) : (
-                                <p style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#555', marginTop: '20px' }}>
-                                    No requests available.
-                                </p>
-                            )
-                        ) : null}
+                        ) : requests && requests.length > 0 ? (
+                            <>
+                                <table className="request-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                    <thead>
+                                        <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
+                                            <th style={tableHeaderCellStyle}>Select</th>
+                                            <th style={tableHeaderCellStyle}>Subject</th>
+                                            <th style={tableHeaderCellStyle}>Email</th>
+                                            <th style={tableHeaderCellStyle}>Message</th>
+                                            <th style={{ ...tableHeaderCellStyle, textAlign: 'center' }}>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {requests.map((request) => (
+                                            // Render the request only if it's not in deletedRequests
+                                            !deletedRequests.includes(request._id) && (
+                                                <Request
+                                                    key={request._id}
+                                                    request={request}
+                                                    selectedRequests={selectedRequests}
+                                                    setSelectedRequests={setSelectedRequests}
+                                                />
+                                            )
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </>
+                        ) : (
+                            
+                            <p style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#555', marginTop: '20px' }}>
+                                No requests available.
+                            </p>
+                        )}
+                        {selectedRequests.length > 0 && (
+                            <button
+                                className="btn btn-danger"
+                                style={{ marginTop: '20px' }}
+                                onClick={handleDeleteSelected}
+                                disabled={isDeleting}
+                            >
+                                {isDeleting ? 'Deleting...' : 'Delete Selected'}
+                            </button>
+                        )}
                         <Link title="Logout" onClick={sendLogout} className="btn btn-outline-primary" style={{ display: 'block', marginTop: '200px' }}>
                             Logout
                         </Link>
