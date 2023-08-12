@@ -11,36 +11,26 @@ const LandingPage = () => {
                 <main className="page lanidng-page">
                     <section className="portfolio-block block-intro">
                         <div className="container">
-                            <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
-                            <div className="about-me">
-                                <p>
-                                    Hello! I am <strong>Sanjay Singh</strong>.<br />
-                                    <span style={{ color: "rgb(36, 41, 47)" }}>
-                                        I am a final year B. Tech. Computer Science Engineering student, constantly learning and exploring new technologies in the world of software development.
-                                    </span>
-                                </p>
-                                <Link className="btn btn-outline-primary" role="button" to="/hire-me">Hire me</Link>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="portfolio-block block-intro border-bottom">
-                        <div className="container">
-                            <div className="about-me">
-                                <h2 className="text-center">My Journey in Software Development</h2>
-                                <p>
-                                    Throughout my journey, I've embarked on a path of continuous learning and exploration in the realm of software development. From the early days of coding simple scripts to creating complex web applications, every step has been a learning experience.
-                                </p>
-                                <p>
-                                    I've dived into various technologies and languages, experimenting with Python, Java, and JavaScript. I've built interactive websites, participated in hackathons, and collaborated on open-source projects.
-                                </p>
-                                <p>
-                                    Each project has added a new dimension to my skill set. Whether it's the thrill of solving intricate problems, the joy of designing elegant user interfaces, or the satisfaction of building scalable backend systems, I embrace every challenge.
-                                </p>
-                                <p>
-                                    Join me in this exciting journey as I continue to push boundaries, harness the power of innovation, and contribute to the ever-evolving landscape of software development.
-                                </p>
-                                <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">Hire me</Link>
+                            <div className="row align-items-center">
+                                <div className="col-md-6">
+                                    <div className="avatar">
+                                        <img src="img/avatars/avatar.jpg" alt="Sanjay Singh" />
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="about-me">
+                                        <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
+                                        <p className="lead">
+                                            A final year B.Tech. Computer Science Engineering student with a passion for innovation and technology.
+                                        </p>
+                                        <p>
+                                            I'm on a journey to discover and apply the latest trends in software development. Exploring new technologies, solving challenging problems, and building elegant solutions is what fuels my enthusiasm.
+                                        </p>
+                                        <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
+                                            Hire me
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
