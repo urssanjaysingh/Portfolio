@@ -104,7 +104,7 @@ const RequestsList = () => {
                                     display: 'block',
                                     overflowX: 'auto',
                                 }}>
-                                    <thead style={{ display: 'none' }}>
+                                    <thead style={{ display: 'block' }}>
                                         <tr style={{ borderBottom: '1px solid #ccc', background: '#f1f1f1' }}>
                                             <th style={tableHeaderCellStyle}>Select</th>
                                             <th style={tableHeaderCellStyle}>Subject</th>
