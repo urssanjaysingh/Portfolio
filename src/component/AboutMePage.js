@@ -22,13 +22,6 @@ const AboutMePage = () => {
         color: '#555',
     };
 
-    const paragraphContainerStyles = {
-        padding: '20px',
-        backgroundColor: 'rgba(0, 0, 0, 0.03)',
-        borderRadius: '10px',
-        boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.1)',
-    };
-
     const [typedText, setTypedText] = useState('');
     const fullText = "Hi, I'm Sanjay Singh";
 
@@ -78,21 +71,19 @@ const AboutMePage = () => {
                         <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
                         <div className="about-me animated-text">
                             <h1 className="display-4">{typedText}</h1>
-                            <div className="about-me" style={paragraphContainerStyles}>
-                                <p className="lead" style={leadStyles}>
-                                    A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
-                                </p>
-                                <p style={regularTextStyles}>
-                                    From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
-                                </p>
-                            </div>
+                            <p className="lead" style={leadStyles}>
+                                A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
+                            </p>
+                            <p style={regularTextStyles}>
+                                From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
+                            </p>
                             <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
                                 Hire me
                             </Link>
                         </div>
                     </div>
                 </section>
-                
+
                 <section className="portfolio-block cv">
                     <div className="container">
                         <div className="work-experience group">
