@@ -24,26 +24,18 @@ const LandingPage = () => {
                         </div>
                     </section>
 
-                    <section className="portfolio-block photography">
+                    <section className="portfolio-block block-intro border-bottom">
                         <div className="container">
-                            <div className="row g-0">
-                                <div className="col-md-12 col-lg-12 item">
-                                    <h2 className="text-center">MERN Stack Web Development</h2>
-                                    <p className="text-center bg-light p-4">
-                                        MERN is an acronym for MongoDB, Express, React, and Node.js. These are the technologies that I use to create dynamic and responsive web applications. MongoDB is a NoSQL database that stores data in JSON-like documents. Express is a web framework that handles routing, middleware, and API endpoints. React is a front-end library that renders user interfaces with reusable components. Node.js is a runtime environment that executes JavaScript code on the server-side.
-                                    </p>
-                                    <p className="text-center bg-light p-4">
-                                        I have experience in building full-stack web applications using the MERN stack. Some of the projects that I have worked on are focused on:
-                                    </p>
-                                    <ul className="text-center bg-light p-4">
-                                        <li>Creating a blog site with features like creating, editing, and deleting posts, as well as commenting and liking other posts.</li>
-                                        <li>Developing a social media platform with user profiles, follow functionality, post sharing, and chat capabilities.</li>
-                                        <li>Building an e-commerce site allowing users to explore products, add items to cart, complete checkout, and make payments.</li>
-                                    </ul>
-                                    <p className="text-center bg-light p-4">
-                                        You can check out some of my MERN stack projects on my GitHub page or on my portfolio site. I am always eager to learn new technologies and improve my skills as a web developer.
-                                    </p>
-                                </div>
+                            <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
+                            <div className="about-me">
+                                <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
+                                <p className="lead">
+                                    A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
+                                </p>
+                                <p>
+                                    From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
+                                </p>
+                                <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">Hire me</Link>
                             </div>
                         </div>
                     </section>
