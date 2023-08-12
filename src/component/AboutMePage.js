@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
@@ -7,25 +7,68 @@ import useTitle from '../hooks/useTitle'
 const AboutMePage = () => {
     useTitle('About Me')
 
+    const [typedText, setTypedText] = useState('');
+    const fullText = "Hi, I'm Sanjay Singh";
+
+    useEffect(() => {
+        let currentText = '';
+        let currentIndex = 0;
+
+        const typingInterval = setInterval(() => {
+            if (currentIndex < fullText.length) {
+                currentText += fullText[currentIndex];
+                setTypedText(currentText);
+                currentIndex++;
+            } else {
+                clearInterval(typingInterval);
+            }
+        }, 100); // Typing speed (in milliseconds)
+
+        return () => clearInterval(typingInterval);
+    }, []);
+
     return (
         <>
             <Header />
             <main className="page cv-page">
                 <section className="portfolio-block block-intro border-bottom">
+                    <style>
+                        {`
+                    .animated-text {
+                        opacity: 0;
+                        transform: translateY(20px);
+                        animation: fadeAndSlideIn 1s ease forwards;
+                    }
+
+                    @keyframes fadeAndSlideIn {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                `}
+                    </style>
                     <div className="container">
                         <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
-                        <div className="about-me">
-                            <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
+                        <div className="about-me animated-text">
+                            <h1 className="display-4">{typedText}</h1>
                             <p className="lead">
                                 A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
                             </p>
                             <p>
                                 From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
                             </p>
-                            <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">Hire me</Link>
+                            <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
+                                Hire me
+                            </Link>
                         </div>
                     </div>
                 </section>
+                
                 <section className="portfolio-block cv">
                     <div className="container">
                         <div className="work-experience group">
