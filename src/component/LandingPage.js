@@ -29,7 +29,7 @@ const LandingPage = () => {
             <Header />
             <div>
                 <main className="page lanidng-page">
-                    <section className="portfolio-block block-intro">
+                    <section className="portfolio-block block-intro border-bottom">
                         <style>
                             {`
                             .animated-text {
