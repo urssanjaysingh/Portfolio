@@ -1,9 +1,29 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header'
 import Footer from './Footer';
 
 const LandingPage = () => {
+    const [typedText, setTypedText] = useState('');
+    const fullText = "Hi, I'm Sanjay Singh";
+
+    useEffect(() => {
+        let currentText = '';
+        let currentIndex = 0;
+
+        const typingInterval = setInterval(() => {
+            if (currentIndex < fullText.length) {
+                currentText += fullText[currentIndex];
+                setTypedText(currentText);
+                currentIndex++;
+            } else {
+                clearInterval(typingInterval);
+            }
+        }, 100); // Typing speed (in milliseconds)
+
+        return () => clearInterval(typingInterval);
+    }, []);
+
     return (
         <>
             <Header />
@@ -33,7 +53,7 @@ const LandingPage = () => {
                         <div className="container">
                             <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
                             <div className="about-me animated-text">
-                                <h1 className="display-4">Hi, I'm Sanjay Singh</h1>
+                                <h1 className="display-4">{typedText}</h1>
                                 <p className="lead">
                                     A final year B.Tech. Computer Science Engineering student with a passion for innovation and technology.
                                 </p>
@@ -63,7 +83,7 @@ const LandingPage = () => {
                         </div>
                     </section> */}
 
-                    <section className="portfolio-block call-to-action border-bottom">
+                    {/* <section className="portfolio-block call-to-action border-bottom">
                         <div className="container">
                             <div className="d-flex justify-content-center align-items-center content">
                                 <h3>Like what you see?</h3>
@@ -74,7 +94,7 @@ const LandingPage = () => {
                                 </Link>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
                     <section className="portfolio-block skills">
                         <div className="container">
