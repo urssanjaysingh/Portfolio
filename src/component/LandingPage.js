@@ -27,6 +27,24 @@ const LandingPage = () => {
                     <section className="portfolio-block photography">
                         <div className="container">
                             <div className="row g-0">
+                                <div className="col-md-12 col-lg-12 item">
+                                    <h2 className="text-center">MERN Stack Web Development</h2>
+                                    <p className="text-center">MERN is an acronym for MongoDB, Express, React, and Node.js. These are the technologies that I use to create dynamic and responsive web applications. MongoDB is a NoSQL database that stores data in JSON-like documents. Express is a web framework that handles routing, middleware, and API endpoints. React is a front-end library that renders user interfaces with reusable components. Node.js is a runtime environment that executes JavaScript code on the server-side.</p>
+                                    <p className="text-center">I have experience in building full-stack web applications using the MERN stack. Some of the projects that I have worked on are:</p>
+                                    <ul className="text-center">
+                                        <li>A blog site where users can create, edit, and delete posts, as well as comment and like other posts.</li>
+                                        <li>A social media platform where users can create profiles, follow other users, share posts, and chat with each other.</li>
+                                        <li>An e-commerce site where users can browse products, add them to cart, checkout, and make payments.</li>
+                                    </ul>
+                                    <p className="text-center">You can check out some of my MERN stack projects on my GitHub page or on my portfolio site. I am always eager to learn new technologies and improve my skills as a web developer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* <section className="portfolio-block photography">
+                        <div className="container">
+                            <div className="row g-0">
                                 <div className="col-md-6 col-lg-4 item zoom-on-hover">
                                     <Link to="#"><img className="img-fluid image" src="img/main/html.jpg" alt="HTML" /></Link>
                                 </div>
@@ -38,7 +56,7 @@ const LandingPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
                     <section className="portfolio-block call-to-action border-bottom">
                         <div className="container">
