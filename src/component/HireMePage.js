@@ -102,7 +102,7 @@ const HireMePage = () => {
                 setSuccessMessage('');
                 setErrorMessage('Form submission failed: ' + response.error.message);
             } else {
-                setSuccessMessage('Form submitted successfully');
+                setSuccessMessage('Request created successfully');
                 setErrorMessage('');
             }
         } catch (error) {

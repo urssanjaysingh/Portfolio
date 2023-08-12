@@ -80,7 +80,7 @@ const RequestsList = () => {
     return (
         <main className="page request-page">
             <Helmet>
-                <link rel="icon" href="../../img/icons/portfolio.png" type="image/x-icon" />
+                <link rel="icon" href="../../img/icons/portfolio.ico" type="image/x-icon" />
                 <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap" />
                 <link rel="stylesheet" href="../../fonts/ionicons.min.css" />
