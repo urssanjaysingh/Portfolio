@@ -8,17 +8,25 @@ const AboutMePage = () => {
     useTitle('About Me')
 
     const leadStyles = {
-        fontSize: '1.25rem',
-        lineHeight: '1.6',
-        marginBottom: '1rem',
-        color: '#333', // Adjust the text color for readability
+        fontSize: '1.5rem',
+        lineHeight: '1.8',
+        marginBottom: '1.5rem',
+        color: '#333',
+        fontWeight: 'bold',
     };
 
     const regularTextStyles = {
-        fontSize: '1rem',
-        lineHeight: '1.5',
-        marginBottom: '1rem',
-        color: '#555', // Adjust the text color for readability
+        fontSize: '1.2rem',
+        lineHeight: '1.6',
+        marginBottom: '1.5rem',
+        color: '#555',
+    };
+
+    const paragraphContainerStyles = {
+        padding: '20px',
+        backgroundColor: 'rgba(0, 0, 0, 0.03)',
+        borderRadius: '10px',
+        boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.1)',
     };
 
     const [typedText, setTypedText] = useState('');
@@ -70,12 +78,14 @@ const AboutMePage = () => {
                         <div className="avatar" style={{ backgroundImage: "url('img/avatars/avatar.jpg')" }}></div>
                         <div className="about-me animated-text">
                             <h1 className="display-4">{typedText}</h1>
-                            <p className="lead" style={leadStyles}>
-                                A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
-                            </p>
-                            <p style={regularTextStyles}>
-                                From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
-                            </p>
+                            <div className="about-me" style={paragraphContainerStyles}>
+                                <p className="lead" style={leadStyles}>
+                                    A passionate Computer Science Engineering student with a drive for web development and software engineering. I'm currently pursuing my B.Tech degree at Dev Bhoomi Group of Institutions, Saharanpur, affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow.
+                                </p>
+                                <p style={regularTextStyles}>
+                                    From coding to designing, I'm on a journey to bring innovative ideas to life in the digital realm. My dedication to learning and my curiosity about the ever-evolving tech landscape fuel my enthusiasm for creating clean, functional, and user-friendly applications.
+                                </p>
+                            </div>
                             <Link className="btn btn-primary btn-lg" role="button" to="/hire-me">
                                 Hire me
                             </Link>
