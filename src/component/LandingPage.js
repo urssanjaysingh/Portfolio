@@ -130,7 +130,7 @@ const LandingPage = () => {
                                 <a href="https://flexiblog-ciza.onrender.com/" target="_blank" rel="noopener noreferrer">
                                     <div className="portfolio-laptop-mockup">
                                         <div className="screen">
-                                            <div className="screen-content" style={{ backgroundImage: "url('img/mern/screenshot2.png')" }}></div>
+                                            <div className="screen-content" style={{ backgroundImage: "url('img/mern/Screenshot2.png')" }}></div>
                                         </div>
                                         <div className="keyboard"></div>
                                     </div>
