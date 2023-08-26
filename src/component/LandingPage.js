@@ -123,14 +123,14 @@ const LandingPage = () => {
                             <div className="col-md-12 col-lg-5 offset-lg-1 text">
                                 <h3>MERN Stack Project</h3>
                                 <p>
-                                    As part of my journey, I created a powerful note management system called techNotes using the MERN (MongoDB, Express.js, React, Node.js) stack. This application offers an advanced and efficient digital solution, replacing traditional sticky note systems. techNotes features include a user-friendly interface, role-based access control, efficient note creation and assignment, and comprehensive tracking. With seamless navigation and responsive design, techNotes streamlines communication and organization within any environment.
+                                    In my creative journey, I've crafted FlexiBlog, a versatile and dynamic blogging platform. Built with the power of React, Node.js, and MongoDB, FlexiBlog empowers writers and bloggers with an intuitive space to bring their stories to life. Say goodbye to limitations and hello to limitless possibilities. FlexiBlog offers an elegant, user-friendly interface for crafting, sharing, and engaging with your content. FlexiBlog is your canvas for creative expression. Dive into the world of flexible and responsive blogging with FlexiBlog today.
                                 </p>
                             </div>
                             <div className="col-md-12 col-lg-5">
-                                <a href="https://technotes-y30i.onrender.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://flexiblog-ciza.onrender.com/" target="_blank" rel="noopener noreferrer">
                                     <div className="portfolio-laptop-mockup">
                                         <div className="screen">
-                                            <div className="screen-content" style={{ backgroundImage: "url('img/mern/screenshot.png')" }}></div>
+                                            <div className="screen-content" style={{ backgroundImage: "url('img/mern/screenshot2.png')" }}></div>
                                         </div>
                                         <div className="keyboard"></div>
                                     </div>
