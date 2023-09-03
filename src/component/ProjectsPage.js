@@ -10,6 +10,30 @@ const ProjectsPage = () => {
 
     const projects = [
         {
+            title: 'TaskSync',
+            description: 'A project management platform.',
+            githubLink: 'https://github.com/urssanjaysingh/TaskSync',
+            tags: ['MERN']
+        },
+        {
+            title: 'FlexiBlog',
+            description: 'An blogging website platform.',
+            githubLink: 'https://github.com/urssanjaysingh/FlexiBlog',
+            tags: ['MERN']
+        },
+        {
+            title: 'MERN Stack Project',
+            description: 'A powerful note management system.',
+            githubLink: 'https://github.com/urssanjaysingh/MERN-Stack-Project',
+            tags: ['MERN']
+        },
+        {
+            title: 'Tacos Website',
+            description: 'A static website showcasing taco recipes.',
+            githubLink: 'https://github.com/urssanjaysingh/CSS/tree/main/027.%20CSS%20Projects/062.%20Tacos%20Website',
+            tags: ['HTML']
+        },
+        {
             title: 'ATM-System',
             description: 'A project of Java on ATM.',
             githubLink: 'https://github.com/urssanjaysingh/ATM-System',
@@ -33,18 +57,6 @@ const ProjectsPage = () => {
             githubLink: 'https://github.com/urssanjaysingh/Bank-Management-System',
             tags: ['C']
         },
-        {
-            title: 'Tacos Website',
-            description: 'A static website showcasing taco recipes.',
-            githubLink: 'https://github.com/urssanjaysingh/CSS/tree/main/027.%20CSS%20Projects/062.%20Tacos%20Website',
-            tags: ['HTML']
-        },
-        {
-            title: 'MERN Stack Project',
-            description: 'A powerful note management system.',
-            githubLink: 'https://github.com/urssanjaysingh/MERN-Stack-Project',
-            tags: ['MERN']
-        }
     ];
 
     return (

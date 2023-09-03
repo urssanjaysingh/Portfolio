@@ -122,6 +122,22 @@ const AboutMePage = () => {
                                     Worked as Student Volunteer in 10th Mega Job Fair 2023 at Dev Bhoomi Campus Saharanpur.
                                 </p>
                             </div>
+                            <div className="item">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <h3>Full Stack Web Development Virtual Intern</h3>
+                                        <h4 className="organization">
+                                            Bharat Intern
+                                        </h4>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <span className="period">May 2023 - August 2023</span>
+                                    </div>
+                                </div>
+                                <p className="text-muted">
+                                    During my virtual internship at Bharat Intern, I had the incredible opportunity to dive deep into the world of Full Stack Web Development. This immersive experience allowed me to explore the latest technologies and gain hands-on experience in building dynamic web applications.
+                                </p>
+                            </div>
                         </div>
                         <div className="education group">
                             <div className="heading">
