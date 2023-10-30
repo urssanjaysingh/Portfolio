@@ -118,27 +118,33 @@ const LandingPage = () => {
                 </main>
 
                 <section className="portfolio-block website gradient">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-md-12 col-lg-5 offset-lg-1 text">
-                                <h3>MERN Stack Project</h3>
-                                <p>
-                                    In my creative journey, I've crafted FlexiBlog, a versatile and dynamic blogging platform. Built with the power of React, Node.js, and MongoDB, FlexiBlog empowers writers and bloggers with an intuitive space to bring their stories to life. Say goodbye to limitations and hello to limitless possibilities. FlexiBlog offers an elegant, user-friendly interface for crafting, sharing, and engaging with your content. FlexiBlog is your canvas for creative expression. Dive into the world of flexible and responsive blogging with FlexiBlog today.
-                                </p>
-                            </div>
-                            <div className="col-md-12 col-lg-5">
-                                <a href="https://flexiblog-ciza.onrender.com/" target="_blank" rel="noopener noreferrer">
-                                    <div className="portfolio-laptop-mockup">
-                                        <div className="screen">
-                                            <div className="screen-content" style={{ backgroundImage: "url('img/mern/Screenshot2.png')" }}></div>
-                                        </div>
-                                        <div className="keyboard"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+				  <div className="container">
+					<div className="row align-items-center">
+					  <div className="col-md-12 col-lg-5 offset-lg-1 text">
+						<h3>Your Ultimate Shopping Destination</h3>
+						<p>
+						  Welcome to ShopNest, your comprehensive e-commerce platform. ShopNest is designed to cater to all your shopping needs, offering a wide range of products and a seamless shopping experience. Whether you're looking for the latest fashion trends, electronics, home decor, or any other products, ShopNest has you covered.
+						</p>
+						<p>
+						  We take pride in our user-friendly and intuitive user interface, secure user authentication, and efficient order processing. At ShopNest, we understand that shopping doesn't always happen at your desktop. Our platform is mobile-responsive, ensuring that your shopping experience is optimized across devices.
+						</p>
+						<p>
+						  Experience ShopNest in action by visiting our [live website](https://shopnest-jjzh.onrender.com/) and explore a world of convenience and variety.
+						</p>
+					  </div>
+					  <div className="col-md-12 col-lg-5">
+						<a href="https://shopnest-jjzh.onrender.com/" target="_blank" rel="noopener noreferrer">
+						  <div className="portfolio-laptop-mockup">
+							<div className="screen">
+							  <div className="screen-content" style={{ backgroundImage: "url('img/mern/Screenshot3.png')" }}></div>
+							</div>
+							<div className="keyboard"></div>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</section>
 
             </div>
             <Footer />
