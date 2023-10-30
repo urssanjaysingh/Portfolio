@@ -123,7 +123,7 @@ const LandingPage = () => {
 					  <div className="col-md-12 col-lg-5 offset-lg-1 text">
 						<h3>Your Ultimate Shopping Destination</h3>
 						<p>
-						  In my journey of innovation, I've conceived a remarkable MERN project. Powered by the prowess of React, Node.js, and MongoDB, this project unlocks new possibilities and empowers users with a versatile and dynamic platform. With a sleek and intuitive user interface, it provides an ideal space for users to unleash their creativity. This project is your canvas for endless possibilities, making it a haven for creative expression. Step into a world of flexibility and responsiveness with our MERN project today.
+						  In my journey of innovation, I've conceived a remarkable MERN project. Powered by the prowess of React, Node.js, and MongoDB, this project empowers users with a versatile and dynamic platform. With a sleek and intuitive user interface, it provides an ideal space for users to unleash their creativity. This project is your canvas for endless possibilities, making it a haven for creative expression. Step into a world of flexibility and responsiveness with our MERN project today.
 						</p>
 					  </div>
 					  <div className="col-md-12 col-lg-5">
