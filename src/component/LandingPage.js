@@ -123,13 +123,7 @@ const LandingPage = () => {
 					  <div className="col-md-12 col-lg-5 offset-lg-1 text">
 						<h3>Your Ultimate Shopping Destination</h3>
 						<p>
-						  Welcome to ShopNest, your comprehensive e-commerce platform. ShopNest is designed to cater to all your shopping needs, offering a wide range of products and a seamless shopping experience. Whether you're looking for the latest fashion trends, electronics, home decor, or any other products, ShopNest has you covered.
-						</p>
-						<p>
-						  We take pride in our user-friendly and intuitive user interface, secure user authentication, and efficient order processing. At ShopNest, we understand that shopping doesn't always happen at your desktop. Our platform is mobile-responsive, ensuring that your shopping experience is optimized across devices.
-						</p>
-						<p>
-						  Experience ShopNest in action by visiting our [live website](https://shopnest-jjzh.onrender.com/) and explore a world of convenience and variety.
+						  In my journey of innovation, I've conceived a remarkable MERN project. Powered by the prowess of React, Node.js, and MongoDB, this project unlocks new possibilities and empowers users with a versatile and dynamic platform. Bid farewell to constraints and usher in an era of boundless opportunities. With a sleek and intuitive user interface, it provides an ideal space for users to unleash their creativity. This project is your canvas for endless possibilities, making it a haven for creative expression. Step into a world of flexibility and responsiveness with our MERN project today.
 						</p>
 					  </div>
 					  <div className="col-md-12 col-lg-5">
