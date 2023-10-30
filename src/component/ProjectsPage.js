@@ -9,6 +9,12 @@ const ProjectsPage = () => {
     useTitle('Projects');
 
     const projects = [
+		{
+            title: 'ShopNest',
+            description: 'A E-commerce website.',
+            githubLink: 'https://github.com/urssanjaysingh/ShopNest',
+            tags: ['MERN']
+        },
         {
             title: 'TaskSync',
             description: 'A project management platform.',
