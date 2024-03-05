@@ -48,3 +48,5 @@ When I'm not coding, I enjoy:
 Learn more about me and my journey by visiting my live portfolio:
 
 [![Live Demo](https://img.shields.io/badge/-Live%20Demo-brightgreen?style=for-the-badge)](https://urssanjaysingh.onrender.com/)
+
+Thank You! :)
