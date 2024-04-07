@@ -162,7 +162,7 @@ const LandingPage = () => {
               </div>
               <div className="col-md-12 col-lg-5">
                 <a
-                  href="https://shopnest-jjzh.onrender.com/"
+                  href="https://pizzarush.onrender.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -171,7 +171,7 @@ const LandingPage = () => {
                       <div
                         className="screen-content"
                         style={{
-                          backgroundImage: "url('img/mern/Screenshot.png')",
+                          backgroundImage: "url('img/mern/Pizzarush.png')",
                         }}
                       ></div>
                     </div>
